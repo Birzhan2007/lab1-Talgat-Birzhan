@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Биржан Талғат — визитка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <h1 class="top__name">Биржан Талғат</h1>
+    <p class="top__role">Студент · Компьютерная инженерия · Консультант в Adidas Kids</p>
+    <button id="toggleTheme" class="btn" type="button">Сменить тему</button>
+  </header>
+
+  <main class="page">
+    <section class="block">
+      <h2>Обо мне</h2>
+      <p>
+        Учусь на факультете КСиПО по специальности «Компьютерная инженерия»
+        в Казахском агротехническом исследовательском университете имени С. Сейфуллина.
+        Параллельно работаю в магазине Adidas Kids в Mega Silkway и осваиваю
+        программирование: базы данных, веб-разработку и учебные проекты.
+      </p>
+
+      <div class="tiles">
+        <article class="tile">
+          <h3>Web</h3>
+          <p>HTML, CSS, JavaScript</p>
+        </article>
+        <article class="tile">
+          <h3>БД</h3>
+          <p>Проектирование реляционных баз данных</p>
+        </article>
+        <article class="tile">
+          <h3>Продажи</h3>
+          <p>Работа с клиентами в рознице</p>
+        </article>
+      </div>
+
+      <ul class="list">
+        <li>Разработка учебных веб-приложений</li>
+        <li>Проектирование баз данных</li>
+        <li>Общение с клиентами и работа в команде</li>
+        <li>Изучаю программирование и инженерию ПО</li>
+      </ul>
+
+      <a class="link" href="https://github.com/5ky9" target="_blank" rel="noopener">Мой GitHub</a>
+    </section>
+
+    <section class="block block--form">
+      <h2>Давайте познакомимся</h2>
+      <form id="helloForm" class="form">
+        <label for="visitorName">Ваше имя:</label>
+        <input type="text" id="visitorName" placeholder="Введите имя">
+        <button type="submit" class="btn">Поздороваться</button>
+      </form>
+      <h2 id="helloText" class="hello">Привет!</h2>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© 2026 Биржан Талғат. Мини-визитка.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

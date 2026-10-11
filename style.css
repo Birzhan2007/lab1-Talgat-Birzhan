@@ -1,0 +1,154 @@
+:root {
+  --bg: #f1f5f9;
+  --text: #1f2937;
+  --muted: #64748b;
+  --surface: #ffffff;
+  --accent: #0f766e;
+  --accent-hover: #0b5a54;
+  --border: #cbd5e1;
+}
+
+body.dark {
+  --bg: #111827;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --surface: #1f2937;
+  --accent: #14b8a6;
+  --accent-hover: #0d9488;
+  --border: #374151;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.top__name {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.top__role {
+  margin: 0;
+  color: var(--muted);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.btn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.block h2 {
+  margin-bottom: 8px;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.tile {
+  flex: 1 1 150px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+
+.tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.tile h3 {
+  margin: 0 0 8px;
+}
+
+.tile p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.list {
+  line-height: 1.8;
+}
+
+.link {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.block--form {
+  margin-top: 40px;
+  padding: 24px;
+  background-color: var(--surface);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.form input {
+  flex: 1 1 200px;
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.hello {
+  margin: 0;
+}
+
+.foot {
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
